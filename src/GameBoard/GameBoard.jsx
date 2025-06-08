@@ -33,8 +33,9 @@ export default function GameBoard({ boardSize, increasePointsOfAPlayer }) {
 		newSlots[i][j] = turn;
 
 		//TODO: implament use effect function that checks if anyone won and move it outside of here
+		//TODO: check for player win
 		if (checkIfGameEnded(newSlots)) {
-			console.log("YEPEEEEE,", turn, "WON!");
+			console.log("YEEPEE game ended");
 		}
 
 
