@@ -34,7 +34,7 @@ function App() {
   return (
     <div className=''>
       
-      <GameSettings player1Points={player1PointsCounter} player2Points={player2PointsCounter} onChangeBoardSize={changeBoardSize}/>
+      <GameSettings player1Points={player1PointsCounter} player2Points={player2PointsCounter} onChangeBoardSize={(n)=>{setBoardSize(n)}}/>
       <GameBoard key={boardSize} boardSize={boardSize} increasePointsOfAPlayer={increasePointsOfPlayerX}/>
     </div>
   )

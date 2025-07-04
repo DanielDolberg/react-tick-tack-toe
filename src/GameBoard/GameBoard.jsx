@@ -29,6 +29,8 @@ export default function GameBoard({ boardSize, increasePointsOfAPlayer }) {
 	const swapTruns = (index) => {
 		const [i, j] = [...index];
 
+		const newSlots = slots.map((row) => [...row]);
+		newSlots[i][j] = turn;
 		//TODO: implament use effect function that checks if anyone won and move it outside of here
 		//TODO: check for player win
 		if (checkIfGameEnded(newSlots)) {
